@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.get("/", (req, resp) => {
-  resp.send("kdfjkdj kfjdsjfij");
+  resp.send("Server running successfully !");
 });
 
 app.post("/files", upload.single("foodimg"), (req, resp) => {
